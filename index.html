@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>side nav</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./animate.css">
+	<!--<script src="mobileNav.js"></script>-->
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Services&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
+			  
+	<nav class="side grey">
+		<img class="logo animated rotateInDownLeft" src="img/siteicon.jpg">
+		<hr>
+		<ul class="main-nav">
+			<li id="li-1" class="animated slideInLeft"><a href="">About</a></li>
+			<li id="li-2" class="animated slideInLeft"><a href="">Services</a></li>
+			<li id="li-3" class="animated slideInLeft"><a href="">Projects</a></li>
+			<li id="li-4" class="animated slideInLeft"><a href="">Contact</a></li>
+		</ul>
+		<div class="social">
+			<h1>I</h1>
+			<h1>F</h1>
+			<h1>L</h1>
+		</div>
+	</nav>
+	<div class="flex-box">
+		<div class="top grey">
+			<span class="hamburger" onclick="openNav()">&#9776;</span>
+		</div>
+		<header>
+			<h1 id="heading" class="animated bounceInDown">Side Navigation</h1>
+		</header>
+		<div class="article blue">
+			<h1>Services</h1>
+			<div class="grid-services">
+				<div class="animated fadeInUp service black">
+					<h3>Web</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero et nobis, consectetur unde voluptatem dolorum excepturi facilis laboriosam beatae harum autem blanditiis dolores sequi! In nemo blanditiis ab dolorum cupiditate?</p>
+				</div>
+				<div class="service black">
+					<h3>Hosting</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero et nobis, consectetur unde voluptatem dolorum excepturi facilis laboriosam beatae harum autem blanditiis dolores sequi! In nemo blanditiis ab dolorum cupiditate?</p>
+				</div>
+				<div class="service black">
+					<h3>iOS Apps</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero et nobis, consectetur unde voluptatem dolorum excepturi facilis laboriosam beatae harum autem blanditiis dolores sequi! In nemo blanditiis ab dolorum cupiditate?</p>
+				</div>
+			</div>
+		</div>
+
+		<footer class="black">
+				Footer
+		</footer>
+	</div>
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "100%";
+		}
+					
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+</body>
+</html>

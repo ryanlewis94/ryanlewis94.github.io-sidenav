@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'beastformregular';
+    src: url('fonts/beastform.eot');
+    src: url('fonts/beastform.eot?#iefix') format('embedded-opentype'),
+         url('fonts/beastform.woff') format('woff'),
+         url('fonts/beastform.svg#beastformregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blackswordregular';
+    src: url('fonts/blacksword.eot');
+    src: url('fonts/blacksword.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blacksword.woff') format('woff'),
+         url('fonts/blacksword.svg#blackswordregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'streamsterregular';
+    src: url('fonts/streamster.eot');
+    src: url('fonts/streamster.eot?#iefix') format('embedded-opentype'),
+         url('fonts/streamster.woff') format('woff'),
+         url('fonts/streamster.svg#streamsterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+.flex-box {
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/******NAV******/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    /*font-family: "streamsterregular";*/
+}
+  
+.sidenav .link:hover {
+    text-decoration: line-through;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.side{
+    height: 100vh;
+    width: 200px;
+    float: left;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.side img {
+    align-self: center;
+}
+
+.side img:hover {
+    cursor: pointer;
+}
+
+.main-nav {
+    list-style: none;
+    font-size: 2em;
+    margin: 0;
+    height: 100vh;
+}
+
+.main-nav > li {
+    padding: 15px 45px 15px 0px;
+    text-align: center;
+}
+
+.main-nav > li:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+    border-right: 5px solid white;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 75%;
+    margin-top: -10px;
+}
+
+.social {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#li-1 {
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+#li-2 {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+#li-3 {
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+#li-4 {
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 0px;
+    z-index: 9;
+}
+
+.hamburger {
+    visibility: hidden;
+}
+
+/******HEADER******/
+
+header {
+    height: 50vh;
+    background-image: url("img/coding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+}
+
+header h1 {
+    font-family: 'blackswordregular';
+    color: white;
+    font-size: 8em;
+    font-weight: 100;
+    text-align: center;
+}
+
+#header {
+    animation-duration: 1.7s;
+    animation-delay: 0.1s;
+}
+
+/******ARTICLE******/
+
+.article {
+    height: 100vh;
+    text-align: center;
+}
+
+.grid-services {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service {
+    padding: 10px;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 750px) {
+    .side {
+        width: 0px;
+        visibility: hidden;
+    }
+
+    .flex-box {
+        margin-left: 0px;
+    }
+
+    .service {
+        max-width: 300px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .top {
+        height: 50px;
+        width: 100%;
+        position: fixed; 
+    }
+
+    .hamburger {
+        font-size: 2em;
+        padding: 0px 0px 5px 15px;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    #li-1 {
+        animation: none;
+    }
+    #li-2 {
+        animation: none;
+    }
+    #li-3 {
+        animation: none;
+    }
+    #li-4 {
+        animation: none;
+    }
+}
+
+
+
+
+
+
+
+
+.grey {
+    color: white;
+    background-color: grey;
+}
+
+.blue {
+    color: white;
+    background-color: lightskyblue;
+}
+
+.black {
+    color: white;
+    background-color: black;
+}
