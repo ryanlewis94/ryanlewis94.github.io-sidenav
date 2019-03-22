@@ -5,8 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="stylesheet" type="text/css" href="./animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 </head>
 <body onresize="resize()">
+
+	<!---------------------Hidden Divs--------------------->
+	                    <!--Mobile Nav-->
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -14,49 +18,98 @@
 		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
 		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
 	</div>
-
+						<!--Project View-->
 	<div id="myProj" class="projects">
 			<a href="javascript:void(0)" class="closebtn" onclick="closePic()">&times;</a>
 			<div id="football" class="proj">
 				<h1>Football</h1>
+				<img src="img/HND.png">
+				<div class="description">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eum vel dignissimos perspiciatis nulla quos iste, autem dolore exercitationem tempora maxime quaerat maiores, pariatur odio voluptas ab assumenda iure ipsam!</p>
+				</div>
+				<button onclick="window.location.href='#'"><span>Visit Site</span></button>
 			</div>
 			<div id="javaScript" class="proj">
 				<h1>JavaScript</h1>
+				<img src="img/jquery.png">
+				<div class="description">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eum vel dignissimos perspiciatis nulla quos iste, autem dolore exercitationem tempora maxime quaerat maiores, pariatur odio voluptas ab assumenda iure ipsam!</p>
+				</div>
+				<button onclick="window.location.href='#'"><span>Visit Site</span></button>
 			</div>
 			<div id="iOS" class="proj">
 				<h1>iOS</h1>
+				<img src="img/OandXs.png">
+				<div class="description">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eum vel dignissimos perspiciatis nulla quos iste, autem dolore exercitationem tempora maxime quaerat maiores, pariatur odio voluptas ab assumenda iure ipsam!</p>
+				</div>
+				<button onclick="window.location.href='#'"><span>Visit Site</span></button>
 			</div>
 			<div id="portfolio" class="proj">
 				<h1>Portfolio</h1>
+				<img src="img/portfolio.jpg">
+				<div class="description">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eum vel dignissimos perspiciatis nulla quos iste, autem dolore exercitationem tempora maxime quaerat maiores, pariatur odio voluptas ab assumenda iure ipsam!</p>
+				</div>
+				<button onclick="window.location.href='#'"><span>Visit Site</span></button>
 			</div>
 			<div id="mobile" class="proj">
 				<h1>Mobile</h1>
+				<img src="img/responsive.png">
+				<div class="description">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eum vel dignissimos perspiciatis nulla quos iste, autem dolore exercitationem tempora maxime quaerat maiores, pariatur odio voluptas ab assumenda iure ipsam!</p>
+				</div>
+				<button onclick="window.location.href='#'"><span>Visit Site</span></button>
 			</div>
 	</div>
 
-			  
+	<!---------------------Nav--------------------->		  
 	<nav class="side grey">
 		<img class="logo animated rotateInDownLeft" src="img/siteicon.jpg">
 		<hr>
+					<!--Links-->
 		<ul class="main-nav">
 			<li id="li-1" class="animated slideInLeft"><a href="">About</a></li>
 			<li id="li-2" class="animated slideInLeft"><a href="">Services</a></li>
 			<li id="li-3" class="animated slideInLeft"><a href="">Projects</a></li>
 			<li id="li-4" class="animated slideInLeft"><a href="">Contact</a></li>
 		</ul>
+
+		<div class="contact">
+			<a href="mailto:ryan@ryanlewis.co.uk"><img src="img/mail.jpg"></a>
+			<a href="tel:07713960728"><img src="img/phone.jpg"></a>
+		</div>
+					<!--Socials-->
 		<div class="social">
 			<h1>I</h1>
 			<h1>G</h1>
 			<h1>L</h1>
 		</div>
 	</nav>
+
+	<!---------------------Container--------------------->
 	<div class="flex-box">
 		<div class="top grey">
+			<div class="mobile-contact">
+				<a href="mailto:ryan@ryanlewis.co.uk"><img src="img/mail.jpg"></a>
+				<a href="tel:07713960728"><img src="img/phone.jpg"></a>
+			</div>
 			<span class="hamburger" onclick="openNav()">&#9776;</span>
 		</div>
+
+		<!---------------------Header--------------------->
 		<header>
 			<h1 id="heading" class="animated bounceInDown">Side Navigation</h1>
+			<h2>
+  				<span
+     				class="txt-rotate"
+    				data-period="2000"
+					data-rotate='[ "Web Design.", "SEO.", "Hosting.", "Android.", "iOS." ]'>
+				</span>
+			</h2>
 		</header>
+
+		<!---------------------Services--------------------->
 		<div class="article blue">
 			<h1>Services</h1>
 			<div class="grid-services">
@@ -74,6 +127,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!---------------------Portfolio--------------------->
 		<div class="work">
 			<h1>Work</h1>
 			<div class="img-grid">
@@ -110,6 +165,7 @@
 			</div>
 		</div>
 
+		<!---------------------Footer--------------------->
 		<footer class="black">
 				Footer
 		</footer>
