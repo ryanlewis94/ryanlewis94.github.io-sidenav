@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="stylesheet" type="text/css" href="./animate.css">
 </head>
-<body>
+<body onresize="resize()">
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -14,6 +14,26 @@
 		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
 		<a href="#" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
 	</div>
+
+	<div id="myProj" class="projects">
+			<a href="javascript:void(0)" class="closebtn" onclick="closePic()">&times;</a>
+			<div id="football" class="proj">
+				<h1>Football</h1>
+			</div>
+			<div id="javaScript" class="proj">
+				<h1>JavaScript</h1>
+			</div>
+			<div id="iOS" class="proj">
+				<h1>iOS</h1>
+			</div>
+			<div id="portfolio" class="proj">
+				<h1>Portfolio</h1>
+			</div>
+			<div id="mobile" class="proj">
+				<h1>Mobile</h1>
+			</div>
+	</div>
+
 			  
 	<nav class="side grey">
 		<img class="logo animated rotateInDownLeft" src="img/siteicon.jpg">
@@ -57,11 +77,36 @@
 		<div class="work">
 			<h1>Work</h1>
 			<div class="img-grid">
-				<div class="pic"><img src="img/HND.png"></div>
-        		<div class="pic"><img src="img/jquery.png"></div>
-        		<div class="pic"><img src="img/OandXs.png"></div>
-        		<div class="pic"><img src="img/portfolio.jpg"></div>
-        		<div class="pic"><img src="img/responsive.png"></div>
+				<div class="pic" onclick="checkid(1)">
+					<img src="img/HND.png">
+					<div class="centered">
+							<div class="text">Football League Uni Project</div>
+					</div>
+				</div>
+        		<div class="pic" onclick="checkid(2)">
+					<img src="img/jquery.png">
+					<div class="centered">
+							<div class="text">JavaScript  Uni Project</div>
+					</div>
+				</div>
+        		<div class="pic" onclick="checkid(3)">
+					<img src="img/OandXs.png">
+					<div class="centered">
+							<div class="text">iOS App Uni Project</div>
+					</div>
+				</div>
+        		<div class="pic" onclick="checkid(4)">
+					<img src="img/portfolio.jpg">
+					<div class="centered">
+						<div class="text">Simple Example Portfolio</div>
+					</div>
+				</div>
+        		<div class="pic" onclick="checkid(5)">
+					<img src="img/responsive.png">
+					<div class="centered">
+							<div class="text">Responsive Uni Project</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -70,7 +115,7 @@
 		</footer>
 	</div>
 
-	<script type="text/javascript" src="mobileNav.js"></script>
+	<script type="text/javascript" src="JavaScript.js"></script>
 	
 </body>
 </html>

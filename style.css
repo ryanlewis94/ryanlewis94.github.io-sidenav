@@ -229,7 +229,8 @@ header h1 {
 
 .img-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     margin: 0 5px;
 }
 
@@ -238,10 +239,106 @@ header h1 {
     height: 100%;
     object-fit: cover;
     border: 1px solid black;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
 }
 
+.pic {
+    position: relative;
+}
 
-@media only screen and (max-width: 750px) {
+.centered {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pic:hover img {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.pic:hover .centered {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.text {
+    font-family: 'streamsterregular';
+    font-size: 3em;
+    font-weight: 200;
+    height: 100%;
+    width: 100%;
+}
+
+.projects {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+  
+.projects .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.projects .closebtn:hover {
+    font-size: 45px;
+    color: white;
+    right: 22px;
+}
+
+.proj {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1920px) {
+    .img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .side {
         width: 0px;
         visibility: hidden;
