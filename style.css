@@ -397,6 +397,7 @@ header h2 {
     position: absolute;
     visibility: hidden;
     text-align: center;
+    margin-top: -25px;
 }
 
 .proj > img {
@@ -576,11 +577,7 @@ header h2 {
     .description {
         width: 85%;
     }
-
-    .proj {
-        overflow-y: scroll;
-    }
-
+    
     .proj button {
         font-size: 100%;
         padding: 10px 20px;
@@ -592,6 +589,9 @@ header h2 {
         padding: 7px 14px;
     }
     
+    .moreBtn {
+        display: none;
+    }
 }
 
 
