@@ -56,15 +56,17 @@ body {
     right: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
+    color: white;
     overflow-x: hidden;
     transition: 1s;
     padding-top: 60px;
+    
 }
 
 .sidenav a {
     padding: 20px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -81,6 +83,22 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.mobile-social {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-social img {
+    width: 30px;
+    padding: 10px;
+}
+
+.mobile-social img:hover {
+    opacity: 0.6;
 }
 
 .side{
@@ -126,6 +144,7 @@ body {
 hr {
     width: 75%;
     margin-top: -10px;
+    align-self: center;
 }
 
 .contact {
@@ -153,9 +172,19 @@ hr {
     height: 10vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
     margin-top: -10vh;
+}
+
+.social img {
+    width: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.social img:hover {
+    opacity: 0.6;
 }
 
 #li-1 {
@@ -402,7 +431,7 @@ header h2 {
 }
 
 .skills button {
-    background-color: rgb(0, 0, 0, 0);
+    background-color: lightgray;
     color: coral;
     border: 5px solid coral;
     font-size: 120%;
@@ -413,7 +442,7 @@ header h2 {
 }
 
 .skills button:hover {
-    background-color: rgb(0, 0, 0, 0);
+    background-color: lightgray;
 }
 
 .proj button span {
@@ -454,6 +483,11 @@ header h2 {
     .img-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .contact img {
+        width: 90px;
+        margin-left: 25px;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -472,6 +506,11 @@ header h2 {
     }
     header h2 {
         font-size: 3em;
+    }
+
+    .contact img {
+        width: 70px;
+        margin-left: 35px;
     }
 }
 
