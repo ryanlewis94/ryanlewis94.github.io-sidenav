@@ -516,7 +516,8 @@ header h2 {
 
     .contact img {
         width: 70px;
-        margin-left: 35px;
+        margin-left: 60px;
+        padding: 5px;
     }
 }
 
