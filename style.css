@@ -576,6 +576,22 @@ header h2 {
     .description {
         width: 85%;
     }
+
+    .proj {
+        overflow-y: scroll;
+    }
+
+    .proj button {
+        font-size: 100%;
+        padding: 10px 20px;
+    }
+
+    .skills button {
+        font-size: 80%;
+        border: 3px solid coral;
+        padding: 7px 14px;
+    }
+    
 }
 
 
