@@ -490,6 +490,10 @@ header h2 {
         margin-left: 40px;
         padding: 15px;
     }
+
+    .description {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -572,10 +576,6 @@ header h2 {
     }
     #li-4 {
         animation: none;
-    }
-
-    .description {
-        width: 85%;
     }
     
     .proj button {
