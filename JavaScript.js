@@ -56,7 +56,6 @@ function openPic() {
 	}
 }
 
-
 function closePic() {
 	document.getElementById("myProj").style.width = "0";
 	document.getElementById("football").style.visibility = "hidden";
@@ -64,6 +63,87 @@ function closePic() {
 	document.getElementById("iOS").style.visibility = "hidden";
 	document.getElementById("portfolio").style.visibility = "hidden";
 	document.getElementById("mobile").style.visibility = "hidden";
+}
+
+//Read More Description
+function moreDesc1() {
+	document.getElementById("desc1").style.height = "auto";
+	document.getElementById("desc1").style.display = "inline";
+	document.getElementById("more1").style.display = "none";
+	document.getElementById("less1").style.display = "inline";
+
+	document.getElementById("desc1").classList.add("animated");
+	document.getElementById("desc1").classList.add("fadeIn");
+}
+
+function lessDesc1() {
+		document.getElementById("desc1").style.display = "none";
+		document.getElementById("more1").style.display = "inline";
+		document.getElementById("less1").style.display = "none";
+}
+
+function moreDesc2() {
+	document.getElementById("desc2").style.height = "auto";
+	document.getElementById("desc2").style.display = "inline";
+	document.getElementById("more2").style.display = "none";
+	document.getElementById("less2").style.display = "inline";
+
+	document.getElementById("desc2").classList.add("animated");
+	document.getElementById("desc2").classList.add("fadeIn");
+}
+
+function lessDesc2() {
+		document.getElementById("desc2").style.display = "none";
+		document.getElementById("more2").style.display = "inline";
+		document.getElementById("less2").style.display = "none";
+}
+
+function moreDesc3() {
+	document.getElementById("desc3").style.height = "auto";
+	document.getElementById("desc3").style.display = "inline";
+	document.getElementById("more3").style.display = "none";
+	document.getElementById("less3").style.display = "inline";
+
+	document.getElementById("desc3").classList.add("animated");
+	document.getElementById("desc3").classList.add("fadeIn");
+}
+
+function lessDesc3() {
+		document.getElementById("desc3").style.display = "none";
+		document.getElementById("more3").style.display = "inline";
+		document.getElementById("less3").style.display = "none";
+}
+
+function moreDesc4() {
+	document.getElementById("desc4").style.height = "auto";
+	document.getElementById("desc4").style.display = "inline";
+	document.getElementById("more4").style.display = "none";
+	document.getElementById("less4").style.display = "inline";
+
+	document.getElementById("desc4").classList.add("animated");
+	document.getElementById("desc4").classList.add("fadeIn");
+}
+
+function lessDesc4() {
+		document.getElementById("desc4").style.display = "none";
+		document.getElementById("more4").style.display = "inline";
+		document.getElementById("less4").style.display = "none";
+}
+
+function moreDesc5() {
+	document.getElementById("desc5").style.height = "auto";
+	document.getElementById("desc5").style.display = "inline";
+	document.getElementById("more5").style.display = "none";
+	document.getElementById("less5").style.display = "inline";
+
+	document.getElementById("desc5").classList.add("animated");
+	document.getElementById("desc5").classList.add("fadeIn");
+}
+
+function lessDesc5() {
+		document.getElementById("desc5").style.display = "none";
+		document.getElementById("more5").style.display = "inline";
+		document.getElementById("less5").style.display = "none";
 }
 
 
@@ -129,5 +209,4 @@ window.onload = function() {
   }, 1500);
 };
 
-
-  ///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\
