@@ -58,6 +58,7 @@ function openPic() {
 
 function closePic() {
 	document.getElementById("myProj").style.width = "0";
+	//myProj.querySelectorAll("div.football, div.javaScript, div.iOS, div.portfolio, div.mobile").style.visibility = "hidden";
 	document.getElementById("football").style.visibility = "hidden";
 	document.getElementById("javaScript").style.visibility = "hidden";
 	document.getElementById("iOS").style.visibility = "hidden";
