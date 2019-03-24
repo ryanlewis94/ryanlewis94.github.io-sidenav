@@ -148,19 +148,17 @@ hr {
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 25vh;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 13vh;
 }
 
 .contact img {
-    width: 125px;
-    align-self: center;
+    width: 70px;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
-    padding: 30px;
+    padding: 5px;
 }
 .contact img:hover {
     -webkit-transform: rotate(360deg);
@@ -483,12 +481,6 @@ header h2 {
 @media only screen and (max-width: 1920px) {
     .img-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .contact img {
-        width: 70px;
-        margin-left: 60px;
-        padding: 5px;
     }
 
     .description {
