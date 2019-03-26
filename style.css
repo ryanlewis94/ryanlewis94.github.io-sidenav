@@ -478,6 +478,24 @@ header h2 {
     right: 0;
 }
 
+.contact-form {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+
+footer p {
+    opacity: 0.7;
+}
+
 @media only screen and (max-width: 1920px) {
     .img-grid {
         grid-template-columns: repeat(3, 1fr);
